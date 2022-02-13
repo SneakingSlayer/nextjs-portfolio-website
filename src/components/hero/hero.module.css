@@ -8,12 +8,12 @@
   justify-content: center;
   background-color: #000;
   overflow: hidden;
-  animation: zoomout 0.5s ease;
+  animation: zoomout 1s ease;
 }
 
 @keyframes zoomout {
   from {
-    transform: scale(1.1);
+    transform: scale(1.2);
   }
   to {
     transform: scale(1);
@@ -67,7 +67,7 @@
 }
 
 .btn_group {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 
 .btn_primary {
@@ -77,6 +77,15 @@
   border: 0;
   border-radius: 15px;
   margin-right: 0.5rem;
+  transition: 0.1s;
+  text-decoration: none;
+  color: #000;
+}
+
+.btn_primary:hover {
+  background-color: #cf6f00;
+  cursor: pointer;
+  color: #000;
 }
 
 .btn_line {
@@ -85,6 +94,14 @@
   border: 0;
   font-weight: 700;
   margin-left: 0.5rem;
+  transition: 0.1s;
+  text-decoration: none;
+}
+
+.btn_line:hover {
+  cursor: pointer;
+  color: #fff;
+  opacity: 0.8;
 }
 
 .hero_img {

@@ -21,6 +21,7 @@ const Home: NextPage = () => {
       setCount(count + 1);
     }, 10);
   }, [count]);
+
   return (
     <>
       <Head>

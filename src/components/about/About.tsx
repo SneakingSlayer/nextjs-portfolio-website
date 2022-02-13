@@ -77,11 +77,15 @@ export const About = () => {
               <a
                 href="/"
                 target="_blank"
-                className={style.about_link + " mx-3 ms-0"}
+                className={style.about_link + " mx-3 ms-0 small"}
               >
-                <RiExternalLinkFill fontSize={28} /> &nbsp;My Resume
+                <RiExternalLinkFill fontSize={28} /> &nbsp; Resume
               </a>
-              <a href="/" target="_blank" className={style.about_link}>
+              <a
+                href="https://github.com/SneakingSlayer"
+                target="_blank"
+                className={style.about_link + " small"}
+              >
                 <RiGithubFill fontSize={28} /> &nbsp;SneakingSlayer
               </a>
             </div>

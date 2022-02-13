@@ -59,6 +59,10 @@
   margin-top: 2rem;
 }
 
+.btn_naked:hover {
+  color: #cf6f00;
+}
+
 .list {
   display: flex;
   padding: 0;

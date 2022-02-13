@@ -24,7 +24,7 @@ export const Hero = () => {
       <main className={"content " + style.hero_content}>
         <Row>
           <Col md={6} className="d-flex align-items-center">
-            <FadeIn delay={20}>
+            <FadeIn delay={50}>
               <p className={style.highlight + " mb-0 fw-bold"}>
                 Hi, I am Lance.
               </p>
@@ -38,11 +38,27 @@ export const Hero = () => {
                 a Computer Science major.
               </p>
               <div className={style.btn_group}>
-                <button className={style.btn_primary}>Get In Touch</button>
-                <button className={style.btn_line}>
+                <Link
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  delay={10}
+                  duration={10}
+                  className={style.btn_primary}
+                >
+                  Get In Touch
+                </Link>
+                <Link
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  delay={10}
+                  duration={10}
+                  className={style.btn_line}
+                >
                   Learn More &nbsp;
                   <CgArrowLongRight fontSize={36} />
-                </button>
+                </Link>
               </div>
             </FadeIn>
           </Col>
@@ -53,12 +69,7 @@ export const Hero = () => {
               " d-flex align-items-center justify-content-center"
             }
           >
-            {/** <IoLogoJavascript className={style.floating_icons} fontSize={42} />
-            <IoLogoHtml5 className={style.floating_icons} fontSize={42} />
-            <IoLogoReact className={style.floating_icons} fontSize={42} />
-            <IoLogoNodejs className={style.floating_icons} fontSize={42} />*/}
-
-            <FadeIn delay={20}>
+            <FadeIn delay={50}>
               <img src="/media/images/hero.png" className={style.hero_img} />
             </FadeIn>
           </Col>

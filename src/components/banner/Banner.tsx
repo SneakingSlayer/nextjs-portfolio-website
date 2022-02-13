@@ -2,6 +2,7 @@ import React from "react";
 import style from "./banner.module.css";
 import { Row, Col } from "react-bootstrap";
 import { IoChevronForwardOutline } from "react-icons/io5";
+import { Link } from "react-scroll";
 export const Banner = () => {
   return (
     <div className={style.banner}>
@@ -23,9 +24,16 @@ export const Banner = () => {
             md={2}
             className="d-flex align-items-center justify-content-lg-center justify-content-md-center  justify-content-start mt-4 mt-lg-0 mt-md-0 "
           >
-            <button className={style.banner_btn}>
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              delay={10}
+              duration={10}
+              className={style.banner_btn}
+            >
               <IoChevronForwardOutline fontSize={32} />
-            </button>
+            </Link>
           </Col>
         </Row>
       </main>

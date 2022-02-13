@@ -101,3 +101,7 @@
   font-weight: 600;
   color: #ff8800;
 }
+
+.about_link:hover {
+  color: #cf6f00;
+}

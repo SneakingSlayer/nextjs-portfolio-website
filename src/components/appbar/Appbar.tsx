@@ -18,7 +18,11 @@ export const Appbar = () => {
             <img src="/media/logos/lalogo.svg" className={style.logo} />
           </Navbar.Brand>
           <Nav className="ms-auto">
-            <Nav.Link className={style.appbar_btn + " small"}>
+            <Nav.Link
+              className={style.appbar_btn + " small"}
+              href="/"
+              target="_blank"
+            >
               <RiExternalLinkFill className="mx-1" fontSize={21} /> Resume
             </Nav.Link>
           </Nav>
