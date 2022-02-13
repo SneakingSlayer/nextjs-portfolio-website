@@ -1,0 +1,29 @@
+.footer {
+  background-color: #000;
+  z-index: 99999999999999999;
+}
+.footer_text {
+  margin-bottom: 0;
+
+  color: #ffff;
+  opacity: 0.5;
+}
+
+.footer_content {
+  /** display: flex;
+  justify-content: space-between;
+  align-items: center;*/
+  width: 100%;
+  padding: 2rem 2rem;
+  z-index: 99999999999999999;
+}
+
+.footer_brand {
+  opacity: 0.3;
+  width: 100%;
+  max-width: 50px;
+  height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+}

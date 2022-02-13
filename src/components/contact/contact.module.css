@@ -1,0 +1,103 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  position: relative;
+  overflow: hidden;
+}
+.title {
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 3rem;
+}
+.highlight {
+  color: #ff8800;
+}
+.subtitle {
+  font-weight: 700;
+  color: #ff8800;
+  margin-bottom: 1rem;
+}
+.contact_btn {
+  width: 100%;
+  font-weight: 700;
+  padding: 1rem 0;
+  border-radius: 12px;
+  border: 0;
+  background-color: #ff8800;
+}
+
+.contact_input {
+  background-color: #1c1c1c;
+  padding: 1rem 1rem;
+  border-radius: 12px;
+  border: 1px solid #595959;
+  transition: 0.3s;
+  color: #595959;
+}
+
+.contact_input:focus {
+  outline: 0;
+  border: 1px solid #ff8800;
+  box-shadow: none;
+  background-color: #262626;
+  color: #ff8800;
+}
+
+.contact_label {
+  color: #595959;
+  transition: 0.3s;
+}
+
+.contact_brand_wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.contact_logo {
+  width: 100%;
+  max-width: 80px;
+  height: auto;
+}
+
+.contact_info {
+  margin-bottom: 0;
+  margin-left: 1rem;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.contact_icon {
+  color: #ff8800;
+}
+
+.contact_left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_title {
+  width: 80%;
+  margin-bottom: 2rem;
+}
+
+.soc_med_wrapper {
+  margin-top: 4rem;
+}
+.contact_text {
+  color: #fff;
+  opacity: 0.8;
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.contact_content {
+  padding-bottom: 0 !important;
+}

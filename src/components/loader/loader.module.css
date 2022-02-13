@@ -1,0 +1,32 @@
+.bounce {
+  text-align: center;
+}
+
+.bounce > div {
+  width: 10px;
+  height: 10px;
+  margin: 0 0.2rem;
+  background-color: #ff8800;
+  border-radius: 100%;
+  display: inline-block;
+  animation: sk-bouncedelay 1s infinite ease-in-out both;
+}
+
+.bounce .bounce_1 {
+  animation-delay: -0.32s;
+}
+
+.bounce .bounce_2 {
+  animation-delay: -0.16s;
+}
+
+@keyframes sk-bouncedelay {
+  0%,
+  80%,
+  100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,52 @@
+.splash {
+  background-color: #000;
+  z-index: 999999999;
+  transition: 1s;
+}
+.logo {
+  width: 100%;
+  max-width: 80px;
+  height: auto;
+  z-index: 1;
+}
+
+.loader_wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_txt {
+  font-weight: 700;
+  color: #bb6400;
+  padding: 1rem 0;
+  letter-spacing: 10px;
+  text-align: center;
+  padding-left: 10px;
+  margin: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.counter {
+  position: absolute;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15rem;
+  opacity: 0.15;
+  color: #bb6400;
+  font-style: italic;
+  text-align: center;
+}
+
+.hide {
+  opacity: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .counter {
+    font-size: 30vw;
+  }
+}

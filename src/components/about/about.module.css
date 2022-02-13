@@ -1,0 +1,103 @@
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  position: relative;
+}
+
+.accent {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  opacity: 0.1;
+  top: 100px;
+  right: 600px;
+  max-height: 1200px;
+}
+
+.title {
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 3rem;
+}
+
+.highlight {
+  color: #ff8800;
+}
+
+.subtitle {
+  font-weight: 700;
+  color: #ff8800;
+  margin-bottom: 1rem;
+}
+
+.description {
+  color: #fff;
+  opacity: 0.8;
+}
+
+.profile_wrapper {
+  position: relative;
+}
+
+.profile_pic {
+  width: 95%;
+  height: auto;
+  position: relative;
+  border-radius: 10px;
+}
+
+.img_border {
+  position: absolute;
+  width: 75%;
+  height: 100%;
+  left: 30px;
+  top: 30px;
+  border: 2px solid #ff8800;
+  border-radius: 10px;
+}
+
+.list {
+  column-count: 2;
+  padding-left: 0;
+}
+
+.list_item {
+  color: #fff;
+  padding: 0.5rem 0;
+  opacity: 0.8;
+  list-style: none;
+}
+
+.btn_group {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 320px;
+  margin: 2.5rem 0;
+}
+
+.btn_primary {
+  background-color: #ff8800;
+  outline: 0;
+  border: 0;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  border-radius: 15px;
+}
+
+.btn_naked {
+  color: #fff;
+  background-color: transparent;
+  font-weight: 700;
+  border: 0;
+}
+
+.about_link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: #ff8800;
+}

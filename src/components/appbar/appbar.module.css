@@ -1,0 +1,144 @@
+.appbar {
+  padding: 1rem 2rem;
+}
+
+.logo {
+  width: 100%;
+  max-width: 70px;
+  height: auto;
+}
+
+.appbar_btn {
+  color: #ff8800 !important;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.burger_input {
+  display: none;
+}
+
+.burger {
+  position: absolute;
+  cursor: pointer;
+  width: 2.5rem;
+  height: 1.8rem;
+  right: 1rem;
+  top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  transform: rotate(-180deg);
+  z-index: 99999999;
+  display: none;
+  margin-top: 0.5rem;
+}
+
+.burger > div {
+  height: 5px;
+  background-color: #fff;
+  transition: 0.5s;
+  z-index: 1;
+  border-radius: 100px;
+}
+
+.burger > div:nth-child(1) {
+  width: 1.7rem;
+}
+
+.burger > div:nth-child(3) {
+  width: 1.4rem;
+}
+
+.burger_input:checked ~ .burger > div {
+  background-color: #fff;
+}
+
+.burger_input:checked ~ .burger > div:nth-child(1) {
+  transform: translateY(11px) rotate(-45deg);
+  width: 2rem;
+}
+.burger_input:checked ~ .burger > div:nth-child(2) {
+  opacity: 0;
+}
+.burger_input:checked ~ .burger > div:nth-child(3) {
+  transform: translateY(-13px) rotate(45deg);
+  width: 2rem;
+}
+
+.mobile_nav {
+  background: #000;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  transition-timing-function: cubic-bezier(10, 2, 3, 1);
+  transform: translateX(100%);
+  top: 0;
+  z-index: 0;
+  transition: 0.5s;
+  display: none;
+}
+
+.burger_input:checked ~ .mobile_nav {
+  transform: translateX(0rem);
+}
+
+.nav_list_mobile {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.nav_list_item_mobile {
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem 0;
+
+  border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+}
+.mobile_navigation_btn {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: #ff8800;
+  padding: 1rem 0;
+}
+
+.sm_icon_group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon_container {
+  padding: 0 0.5rem;
+  color: #fff;
+}
+
+.icon_container a {
+  color: #fff;
+}
+
+.icon_container a:hover {
+  color: #ff8800;
+}
+
+@media only screen and (max-width: 992px) {
+  .appbar {
+    padding: 1rem 0;
+    position: absolute;
+  }
+  .appbar_btn {
+    display: none;
+  }
+  .mobile_nav {
+    display: block;
+  }
+  .burger {
+    display: flex;
+  }
+}
