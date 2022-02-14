@@ -34,18 +34,15 @@ export const About = () => {
           <Col md={6} sm={12} className="mt-lg-0 mt-4">
             <h2 className={style.subtitle}>Lance J. Endaya</h2>
             <p className={style.description}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id
-              elit vel risus mollis bibendum vitae at eros. Aliquam fringilla
-              arcu nisi. Quisque est dui, molestie vitae diam vitae, malesuada
-              sodales velit. Integer nec ullamcorper urna. In sit amet ultricies
-              nisi, dapibus condimentum diam. Curabitur dui libero, vehicula vel
-              turpis sed, scelerisque iaculis tortor.
+              Hi! My name is Lance and I am a Front-End Web Developer from Davao
+              city Philippines. I enjoy designing and developing Web
+              Applications that are creative , eye-catching, and usable with the
+              aim to ehance and ease your browsing experience.
             </p>
             <p className={style.description}>
-              Integer nec ullamcorper urna. In sit amet ultricies nisi, dapibus
-              condimentum diam. Curabitur dui libero, vehicula vel turpis sed,
-              scelerisque iaculis tortor. Sed pellentesque dui dui, eget iaculis
-              turpis sodales sit amet.
+              I've been working as a Freelance Web Developer for about a year
+              using a variety of modern technologies. My primary focus is
+              building or reanimating boring and complex websites.
             </p>
             <p className={style.description}>
               Here are a few technologies I’ve been working with recently:
@@ -77,11 +74,15 @@ export const About = () => {
               <a
                 href="/"
                 target="_blank"
-                className={style.about_link + " mx-3 ms-0"}
+                className={style.about_link + " mx-3 ms-0 small"}
               >
-                <RiExternalLinkFill fontSize={28} /> &nbsp;My Resume
+                <RiExternalLinkFill fontSize={28} /> &nbsp; Resume
               </a>
-              <a href="/" target="_blank" className={style.about_link}>
+              <a
+                href="https://github.com/SneakingSlayer"
+                target="_blank"
+                className={style.about_link + " small"}
+              >
                 <RiGithubFill fontSize={28} /> &nbsp;SneakingSlayer
               </a>
             </div>

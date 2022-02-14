@@ -28,6 +28,10 @@
   background-color: #ff8800;
 }
 
+.contact_btn:hover {
+  background-color: #cf6f00;
+}
+
 .contact_input {
   background-color: #1c1c1c;
   padding: 1rem 1rem;

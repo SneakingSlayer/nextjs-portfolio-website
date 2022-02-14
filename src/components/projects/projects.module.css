@@ -57,6 +57,11 @@
   display: flex;
   align-items: center;
   margin-top: 2rem;
+  text-decoration: none;
+}
+
+.btn_naked:hover {
+  color: #cf6f00;
 }
 
 .list {
@@ -108,8 +113,8 @@
   margin-bottom: 7rem;
 }
 
-.project_wrapper:nth-child(4) {
-  margin-bottom: 0rem;
+.project_wrapper:last-child {
+  margin-bottom: 2rem;
 }
 
 @media only screen and (max-width: 992px) {

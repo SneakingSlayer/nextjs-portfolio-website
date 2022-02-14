@@ -15,6 +15,10 @@
   font-weight: 600;
 }
 
+.appbar_btn:hover {
+  color: #cf6f00 !important;
+}
+
 .burger_input {
   display: none;
 }
