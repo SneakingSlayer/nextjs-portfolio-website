@@ -74,6 +74,7 @@ export const About = () => {
               <a
                 href="/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className={style.about_link + " mx-3 ms-0 small"}
               >
                 <RiExternalLinkFill fontSize={28} /> &nbsp; Resume
@@ -81,6 +82,7 @@ export const About = () => {
               <a
                 href="https://github.com/SneakingSlayer"
                 target="_blank"
+                rel="noopener noreferrer"
                 className={style.about_link + " small"}
               >
                 <RiGithubFill fontSize={28} /> &nbsp;SneakingSlayer

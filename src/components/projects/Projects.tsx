@@ -34,6 +34,7 @@ export const Projects = () => {
               <a
                 href="https://goolyapp.herokuapp.com/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className={style.btn_naked}
               >
                 Visit site &nbsp;
