@@ -67,7 +67,11 @@ export const Projects = () => {
                 <li className={style.list_item + " small"}>Photoshop</li>
               </ul>
               <a
-                href={process.env.terraProjectRoute}
+                href={
+                  process.env.terraProjectRoute === undefined
+                    ? "/"
+                    : process.env.terraProjectRoute
+                }
                 target="_blank"
                 rel="noopener noreferrer"
                 className={style.btn_naked}
