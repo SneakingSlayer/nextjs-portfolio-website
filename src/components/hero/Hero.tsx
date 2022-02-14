@@ -29,13 +29,14 @@ export const Hero = () => {
                 Hi, I am Lance.
               </p>
               <h1 className={style.title}>
-                I'm a<span className={style.highlight}> Web Developer</span>{" "}
-                from Davao City.
+                I&apos;m a
+                <span className={style.highlight}> Web Developer</span> from
+                Davao City.
               </h1>
               <p className={style.description}>
-                I'm a Software Engineer primarily focused on enhancing your web
-                experience. I recently graduated from Malayan Colleges, MAPUA as
-                a Computer Science major.
+                I&apos;m a Software Engineer primarily focused on enhancing your
+                web experience. I recently graduated from Malayan Colleges,
+                MAPUA as a Computer Science major.
               </p>
               <div className={style.btn_group}>
                 <Link

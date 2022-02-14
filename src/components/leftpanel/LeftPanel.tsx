@@ -99,22 +99,38 @@ export const LeftPanel = () => {
 
         <div className={style.sm_icon_group}>
           <div className={style.icon_container}>
-            <a href="https://www.facebook.com/Lan.Arch22/" target="_blank">
+            <a
+              href="https://www.facebook.com/Lan.Arch22/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaFacebookF fontSize={16} />
             </a>
           </div>
           <div className={style.icon_container}>
-            <a href="https://www.instagram.com/thelancethe/" target="_blank">
+            <a
+              href="https://www.instagram.com/thelancethe/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaInstagram fontSize={16} />
             </a>
           </div>
           <div className={style.icon_container}>
-            <a href="https://twitter.com/thelancethe" target="_blank">
+            <a
+              href="https://twitter.com/thelancethe"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaTwitter fontSize={16} />
             </a>
           </div>
           <div className={style.icon_container}>
-            <a href="https://github.com/SneakingSlayer" target="_blank">
+            <a
+              href="https://github.com/SneakingSlayer"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaGithub fontSize={16} />
             </a>
           </div>
