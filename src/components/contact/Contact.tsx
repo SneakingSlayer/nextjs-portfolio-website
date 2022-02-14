@@ -17,15 +17,19 @@ export const Contact = () => {
     setStatus(null);
     emailjs
       .send(
-        process.env.yourServiceID,
-        process.env.yourTemplateID,
+        process.env.yourServiceID === undefined
+          ? ""
+          : process.env.yourServiceID,
+        process.env.yourTemplateID === undefined
+          ? ""
+          : process.env.yourTemplateID,
         {
           from_name: name,
           to_name: "Lance",
           from_email: email,
           message: message,
         },
-        process.env.userID
+        process.env.userID === undefined ? "" : process.env.userID
       )
       .then((res) => {
         setName("");
