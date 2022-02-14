@@ -61,7 +61,7 @@ export const Contact = () => {
                 <h2 className={style.subtitle + " mb-0"}>Get In Touch!</h2>
                 <p className={style.contact_text}>
                   Always excited for new opportunities. Feel free to message me
-                  for inquiries, let's chat. Drop by and say Hi!
+                  for inquiries, let&apos;s chat. Drop by and say Hi!
                 </p>
               </div>
               <div>

@@ -36,12 +36,12 @@ export const About = () => {
             <p className={style.description}>
               Hi! My name is Lance and I am a Front-End Web Developer from Davao
               city Philippines. I enjoy designing and developing Web
-              Applications that are creative , eye-catching, and usable with the
+              Applications that are creative, eye-catching, and usable with the
               aim to ehance and ease your browsing experience.
             </p>
             <p className={style.description}>
-              I've been working as a Freelance Web Developer for about a year
-              using a variety of modern technologies. My primary focus is
+              I&apos;ve been working as a Freelance Web Developer for about a
+              year using a variety of modern technologies. My primary focus is
               building or reanimating boring and complex websites.
             </p>
             <p className={style.description}>

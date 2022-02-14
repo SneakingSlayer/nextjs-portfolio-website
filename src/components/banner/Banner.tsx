@@ -17,7 +17,7 @@ export const Banner = () => {
             <p className="mb-0">
               Do you want to build a website that stands out from the rest or
               are you unsatisfied with how your Website currently looks? Feel
-              free to contact me and let's talk about it.
+              free to contact me and let&apos;s talk about it.
             </p>
           </Col>
           <Col
