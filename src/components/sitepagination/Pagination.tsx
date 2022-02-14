@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { routes } from "../../utils/routes";
 import style from "./pagination.module.css";
 import Scrollspy from "react-scrollspy";
 import { Link } from "react-scroll";
-
+import { routes } from "../../utils/routes";
 export const Pagination = () => {
   return (
     <div className={style.pagination}>

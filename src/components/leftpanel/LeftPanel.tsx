@@ -6,12 +6,8 @@ import { Nav } from "react-bootstrap";
 import { FaFacebookF, FaInstagram, FaTwitter, FaGithub } from "react-icons/fa";
 import Scrollspy from "react-scrollspy";
 import { Link } from "react-scroll";
+import { routes } from "../../utils/routes";
 export const LeftPanel = () => {
-  const links = ["home", "about", "projects", "contact"];
-  // window.location.hash = links[0];
-  const updateURL = () => {
-    const index = links.indexOf(window.location.hash.substring(1));
-  };
   return (
     <div className={style.left_panel} id="leftpanel">
       <main className={style.content}>
@@ -55,9 +51,8 @@ export const LeftPanel = () => {
         <nav className={style.nav_list}>
           <Scrollspy
             className={"scrollspy"}
-            items={links}
+            items={routes}
             currentClassName="active"
-            onUpdate={updateURL}
           >
             <Link
               className={style.nav_list_item + " small"}

@@ -98,6 +98,7 @@
 .nav_list_item:hover {
   opacity: 0.5;
   color: #fff;
+  cursor: pointer;
 }
 
 .icon_container a {

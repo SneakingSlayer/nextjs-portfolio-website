@@ -27,6 +27,16 @@ const Home: NextPage = () => {
       <Head>
         <title>Lance Endaya</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta
+          name="description"
+          content="Hi! I am Lance and I'm a Software Engineer primarily focused on enhancing your web
+                experience. I recently graduated from Malayan Colleges, MAPUA as
+                a Computer Science major."
+        />
+        <meta
+          name="image"
+          content="https://user-images.githubusercontent.com/78993861/153835153-b57bafa3-89cc-47b1-8f7a-c09a92f219c0.png"
+        />
       </Head>
       {count < 97 ? (
         <SplashScreen count={count} />

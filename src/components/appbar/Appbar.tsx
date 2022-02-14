@@ -7,8 +7,8 @@ import { FaPaperPlane } from "react-icons/fa";
 import Scrollspy from "react-scrollspy";
 import { Link } from "react-scroll";
 import { FaFacebookF, FaInstagram, FaTwitter, FaGithub } from "react-icons/fa";
+import { routes } from "../../utils/routes";
 export const Appbar = () => {
-  const links = ["home", "about", "projects", "contact"];
   const [open, setOpen] = useState<boolean>(false);
   return (
     <>
@@ -43,7 +43,7 @@ export const Appbar = () => {
           <nav className={style.mobile_nav}>
             <Scrollspy
               className={"scrollspy " + style.nav_list_mobile}
-              items={links}
+              items={routes}
               currentClassName="active"
             >
               <Link
