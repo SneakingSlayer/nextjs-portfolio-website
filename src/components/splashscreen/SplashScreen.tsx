@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import style from "./splash.module.css";
 import { Loader } from "../loader/Loader";
 import LoadingBar from "react-top-loading-bar";
-export const SplashScreen = (props) => {
+export const SplashScreen = (props: any) => {
   const [count, setCount] = useState(0);
   useEffect(() => {
     setCount(props.count);
