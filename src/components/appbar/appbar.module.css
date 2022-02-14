@@ -102,6 +102,11 @@
 
   border-bottom: 1px solid rgb(255, 255, 255, 0.1);
 }
+
+.nav_list_item_mobile:hover {
+  color: #ff8800;
+}
+
 .mobile_navigation_btn {
   text-decoration: none;
   display: flex;
