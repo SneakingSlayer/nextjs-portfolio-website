@@ -42,7 +42,7 @@ export const Contact = () => {
 
   return (
     <div className={style.contact} id="contact">
-      <video loop muted autoPlay controls="" className={style.bg}>
+      <video loop muted autoPlay controls={false} className={style.bg}>
         <source src="/media/videos/bg.mp4" type="video/mp4" />
       </video>
       <main className={"content " + style.contact_content}>
