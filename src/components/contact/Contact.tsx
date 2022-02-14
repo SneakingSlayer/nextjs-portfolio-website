@@ -56,8 +56,8 @@ export const Contact = () => {
               <div className={style.contact_title}>
                 <h2 className={style.subtitle + " mb-0"}>Get In Touch!</h2>
                 <p className={style.contact_text}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer bibendum ac orci volutpat tempus.
+                  Always excited for new opportunities. Feel free to message me
+                  for inquiries, let's chat. Drop by and say Hi!
                 </p>
               </div>
               <div>

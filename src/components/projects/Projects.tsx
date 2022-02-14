@@ -19,22 +19,26 @@ export const Projects = () => {
             <div>
               <h3 className={style.subtitle}>Gooly: URL Shortener</h3>
               <p className={style.description}>
-                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-                posuere cubilia curae; Etiam rhoncus euismod malesuada. In
-                euismod est et felis egestas, a euismod velit lacinia. Praesent
-                in dolor tincidunt, ultrices velit eget, semper eros. Morbi eu
-                dignissim diam, quis dignissim erat. Aenean porta eros lectus,
-                congue lacinia arcu porta a.
+                Gooly is a uniform resource locator (URL) shortener is a tool or
+                service that shortens the length of a URL. It primarily aims to
+                shorten web page URLs to make them easier to memorize and track.
+                The application can shorten long and cluttered URLs to a minimum
+                of 7 long characters (not including the protocol, domain, and
+                sub paths).
               </p>
               <ul className={style.list}>
                 <li className={style.list_item + " small"}>React</li>
                 <li className={style.list_item + " small"}>Express</li>
                 <li className={style.list_item + " small"}>MongoDB</li>
               </ul>
-              <button className={style.btn_naked}>
+              <a
+                href="https://goolyapp.herokuapp.com/"
+                target="_blank"
+                className={style.btn_naked}
+              >
                 Visit site &nbsp;
                 <CgArrowLongRight fontSize={36} />
-              </button>
+              </a>
             </div>
           </Col>
           <Col
@@ -54,58 +58,24 @@ export const Projects = () => {
             <div>
               <h3 className={style.subtitle}>Terra: Petition App</h3>
               <p className={style.description}>
-                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-                posuere cubilia curae; Etiam rhoncus euismod malesuada. In
-                euismod est et felis egestas, a euismod velit lacinia. Praesent
-                in dolor tincidunt, ultrices velit eget, semper eros. Morbi eu
-                dignissim diam, quis dignissim erat. Aenean porta eros lectus,
-                congue lacinia arcu porta a.
+                Project T.E.R.R.A. is a proposed social media application
+                focused on the environment that acts as an aid in addressing
+                climate change issues.
               </p>
               <ul className={style.list}>
-                <li className={style.list_item + " small"}>React</li>
-                <li className={style.list_item + " small"}>Express</li>
-                <li className={style.list_item + " small"}>MongoDB</li>
+                <li className={style.list_item + " small"}>Illustrator</li>
+                <li className={style.list_item + " small"}>Photoshop</li>
               </ul>
-              <button className={style.btn_naked}>
-                Visit site &nbsp;
+              <a
+                href={process.env.terraProjectRoute}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={style.btn_naked}
+              >
+                View project &nbsp;
                 <CgArrowLongRight fontSize={36} />
-              </button>
+              </a>
             </div>
-          </Col>
-        </Row>
-        <Row className={style.project_wrapper}>
-          <Col
-            md={6}
-            className="d-flex align-items-center text-white order-2 order-md-1 order-lg-1 mt-4"
-          >
-            <div>
-              <h3 className={style.subtitle}>Gooly: URL Shortener</h3>
-              <p className={style.description}>
-                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-                posuere cubilia curae; Etiam rhoncus euismod malesuada. In
-                euismod est et felis egestas, a euismod velit lacinia. Praesent
-                in dolor tincidunt, ultrices velit eget, semper eros. Morbi eu
-                dignissim diam, quis dignissim erat. Aenean porta eros lectus,
-                congue lacinia arcu porta a.
-              </p>
-              <ul className={style.list}>
-                <li className={style.list_item + " small"}>React</li>
-                <li className={style.list_item + " small"}>Express</li>
-                <li className={style.list_item + " small"}>MongoDB</li>
-              </ul>
-              <button className={style.btn_naked}>
-                Visit site &nbsp;
-                <CgArrowLongRight fontSize={36} />
-              </button>
-            </div>
-          </Col>
-          <Col
-            md={6}
-            className={
-              style.feature_img_wrapper + " order-1 order-md-2 order-lg-2 "
-            }
-          >
-            <img src="/media/images/gooly.png" className={style.feature_img} />
           </Col>
         </Row>
         {/**<Row xs={1} md={3} sm={2} className="g-5">
