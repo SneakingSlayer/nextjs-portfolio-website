@@ -48,7 +48,7 @@ export const Projects = () => {
               style.feature_img_wrapper + " order-1 order-md-2 order-lg-2 "
             }
           >
-            <img src="/media/images/gooly.png" className={style.feature_img} />
+            <img src="/media/images/gooly.PNG" className={style.feature_img} />
           </Col>
         </Row>
         <Row className={style.project_wrapper}>
