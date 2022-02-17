@@ -35,7 +35,7 @@ export const Hero = () => {
               </h1>
               <p className={style.description}>
                 I&apos;m a Software Engineer primarily focused on enhancing your
-                web experience. I recently graduated from Malayan Colleges,
+                web experience. I am currently studying from Malayan Colleges,
                 MAPUA as a Computer Science major.
               </p>
               <div className={style.btn_group}>
