@@ -83,6 +83,48 @@ export const Projects = () => {
             </div>
           </Col>
         </Row>
+        <Row className={style.project_wrapper}>
+          <Col
+            md={6}
+            className="d-flex align-items-center text-white order-2 order-md-1 order-lg-1 mt-4"
+          >
+            <div>
+              <h3 className={style.subtitle}>Pollster: Polling app</h3>
+              <p className={style.description}>
+                Pollster is a mobile polling application for organizations to
+                create polls, gather the trends and opinions of their
+                constituents for research purposes. This application is still
+                under development using React Native, Express, MongoDB, and
+                Cloudinary.
+              </p>
+              <ul className={style.list}>
+                <li className={style.list_item + " small"}>React Native</li>
+                <li className={style.list_item + " small"}>Express</li>
+                <li className={style.list_item + " small"}>MongoDB</li>
+              </ul>
+              <a
+                href="https://github.com/SneakingSlayer/react-native-polling-app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={style.btn_naked}
+              >
+                View Project &nbsp;
+                <CgArrowLongRight fontSize={36} />
+              </a>
+            </div>
+          </Col>
+          <Col
+            md={6}
+            className={
+              style.feature_img_wrapper + " order-1 order-md-2 order-lg-2 "
+            }
+          >
+            <img
+              src="/media/images/pollster.png"
+              className={style.feature_img}
+            />
+          </Col>
+        </Row>
         {/**<Row xs={1} md={3} sm={2} className="g-5">
           <Col>
             <div>
