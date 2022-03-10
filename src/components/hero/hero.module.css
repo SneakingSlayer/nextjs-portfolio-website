@@ -20,10 +20,6 @@
   }
 }
 
-.hero:hover {
-  transform: scale(1);
-}
-
 .title {
   /** font-size: 5rem;*/
   font-size: 3rem;
