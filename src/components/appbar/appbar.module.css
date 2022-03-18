@@ -83,6 +83,7 @@
   z-index: 0;
   transition: 0.5s;
   display: none;
+  padding-top: 4rem;
 }
 
 .burger_input:checked ~ .mobile_nav {
@@ -100,7 +101,7 @@
   color: #fff;
   padding: 1rem 0;
 
-  border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgb(255, 255, 255, 0.15);
 }
 
 .nav_list_item_mobile:hover {
@@ -149,5 +150,6 @@
   }
   .burger {
     display: flex;
+    position: fixed;
   }
 }

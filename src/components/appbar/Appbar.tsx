@@ -41,6 +41,8 @@ export const Appbar = () => {
             <div></div>
           </label>
 
+          {/**Mobile nav */}
+
           <nav className={style.mobile_nav}>
             <Scrollspy
               className={"scrollspy " + style.nav_list_mobile}
