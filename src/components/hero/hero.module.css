@@ -8,7 +8,7 @@
   justify-content: center;
   background-color: #000;
   overflow: hidden;
-  animation: zoomout 1s ease;
+  /**animation: zoomout 1s ease;*/
 }
 
 @keyframes zoomout {
