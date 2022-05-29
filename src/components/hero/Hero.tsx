@@ -21,8 +21,8 @@ import { SiTypescript } from "react-icons/si";
 export const Hero = () => {
   return (
     <div className={style.hero} id="home">
-      <main className={"content " + style.hero_content}>
-        <Row>
+      <div className={"content " + style.hero_content}>
+        <Row className="py-4 ">
           <Col md={6} className="d-flex align-items-center">
             <FadeIn delay={50}>
               <p className={style.highlight + " mb-0 fw-bold"}>
@@ -75,7 +75,7 @@ export const Hero = () => {
             </FadeIn>
           </Col>
         </Row>
-      </main>
+      </div>
     </div>
   );
 };

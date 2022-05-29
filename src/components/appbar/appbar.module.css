@@ -1,5 +1,19 @@
 .appbar {
-  padding: 1rem 2rem;
+  padding: 1rem .5rem;
+  transition: background 0.2s ease;
+}
+
+.appbar_active{
+
+  transition: background 0.2s ease;
+  padding: 1rem .5rem;
+  background: rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .logo {
@@ -21,6 +35,23 @@
 
 .burger_input {
   display: none;
+}
+
+.nav_list_item {
+
+  color: #fff;
+  opacity: 0.8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav_list_item:hover {
+  
+  color: #fff;
+  opacity: 0.5;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .burger {
@@ -137,14 +168,8 @@
   color: #ff8800;
 }
 
-@media only screen and (max-width: 992px) {
-  .appbar {
-    padding: 1rem 0;
-    position: absolute;
-  }
-  .appbar_btn {
-    display: none;
-  }
+@media only screen and (max-width:576px) {
+
   .mobile_nav {
     display: block;
   }
