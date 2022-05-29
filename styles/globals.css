@@ -61,6 +61,7 @@ a {
 }
 
 .active {
+  text-shadow: 2px 2px 9px rgba(255, 136, 0,.45) !important;
   color: #ff8800 !important;
   opacity: 1 !important;
 }
