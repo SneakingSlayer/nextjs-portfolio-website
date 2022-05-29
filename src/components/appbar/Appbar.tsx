@@ -10,14 +10,83 @@ import { FaFacebookF, FaInstagram, FaTwitter, FaGithub } from "react-icons/fa";
 import { routes } from "../../utils/routes";
 export const Appbar = () => {
   const [open, setOpen] = useState<boolean>(false);
+  const [navbar, setNavbar] = useState(false);
+  const changeBackground = () => {
+    console.log(window.scrollY);
+    if (window.scrollY >= 66) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+  useEffect(() => {
+    changeBackground();
+    window.addEventListener("scroll", changeBackground);
+  }, [window.scrollY]);
+
+  console.log(navbar);
   return (
     <>
-      <Navbar className={style.appbar + " "} variant="dark" fixed="top">
+      <Navbar
+        className={navbar ? style.appbar_active : style.appbar}
+        variant="dark"
+        fixed="top"
+      >
         <Container className="d-flex align-items-center" fluid>
           <Navbar.Brand href="/">
             <img src="/media/logos/lalogo.svg" className={style.logo} />
           </Navbar.Brand>
-          <Nav className="ms-auto">
+
+          <Nav className="mr-auto 	d-none d-sm-block">
+            <Scrollspy
+              className={"scrollspy px-4"}
+              items={routes}
+              currentClassName="active"
+            >
+              <Link
+                className={style.nav_list_item + " small px-3"}
+                to="home"
+                spy={true}
+                smooth={true}
+                delay={10}
+                duration={10}
+              >
+                Home
+              </Link>
+              <Link
+                className={style.nav_list_item + " small px-3"}
+                to="about"
+                spy={true}
+                smooth={true}
+                delay={10}
+                duration={10}
+              >
+                About
+              </Link>
+              <Link
+                className={style.nav_list_item + " small px-3"}
+                to="projects"
+                spy={true}
+                smooth={true}
+                delay={10}
+                duration={10}
+              >
+                Projects
+              </Link>
+              <Link
+                className={style.nav_list_item + " small px-3"}
+                to="contact"
+                spy={true}
+                smooth={true}
+                delay={10}
+                duration={10}
+              >
+                Contact
+              </Link>
+            </Scrollspy>
+          </Nav>
+
+          <Nav className="ms-auto d-none d-sm-block">
             <Nav.Link
               className={style.appbar_btn + " small"}
               href="/"

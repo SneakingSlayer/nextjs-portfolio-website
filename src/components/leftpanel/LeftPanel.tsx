@@ -9,44 +9,14 @@ import { Link } from "react-scroll";
 import { routes } from "../../utils/routes";
 export const LeftPanel = () => {
   return (
-    <div className={style.left_panel} id="leftpanel">
+    <div className={style.left_panel + " py-4"} id="leftpanel">
       <main className={style.content}>
-        {/** <img className={style.accent} src="/media/logos/lalogo.svg" /> */}
-        <div></div>
         <div className={style.profile_img_wrapper}>
           <img
-            src="/media/images/profilepic.png"
-            className={style.profile_img}
+            src="/media/logos/lalogo.svg"
+            className={style.logo + " d-none d-lg-block"}
           />
         </div>
-
-        {/**  <Nav className={style.nav_list}>
-          <Scrollspy
-            className={"scrollspy"}
-            items={["home", "about", "projects", "contact"]}
-            currentClassName="active"
-            onUpdate={test}
-          >
-            <Nav.Link className={style.nav_list_item + " small"} href="#home">
-              Home
-            </Nav.Link>
-            <Nav.Link className={style.nav_list_item + " small"} href="#about">
-              About
-            </Nav.Link>
-            <Nav.Link
-              className={style.nav_list_item + " small"}
-              href="#projects"
-            >
-              Projects
-            </Nav.Link>
-            <Nav.Link
-              className={style.nav_list_item + " small"}
-              href="#contact"
-            >
-              Contact
-            </Nav.Link>
-          </Scrollspy>
-        </Nav>*/}
 
         <nav className={style.nav_list}>
           <Scrollspy
@@ -55,7 +25,7 @@ export const LeftPanel = () => {
             currentClassName="active"
           >
             <Link
-              className={style.nav_list_item + " small"}
+              className={style.nav_list_item + " small px-3"}
               to="home"
               spy={true}
               smooth={true}
@@ -65,7 +35,7 @@ export const LeftPanel = () => {
               Home
             </Link>
             <Link
-              className={style.nav_list_item + " small"}
+              className={style.nav_list_item + " small px-3"}
               to="about"
               spy={true}
               smooth={true}
@@ -75,7 +45,7 @@ export const LeftPanel = () => {
               About
             </Link>
             <Link
-              className={style.nav_list_item + " small"}
+              className={style.nav_list_item + " small px-3"}
               to="projects"
               spy={true}
               smooth={true}
@@ -85,7 +55,7 @@ export const LeftPanel = () => {
               Projects
             </Link>
             <Link
-              className={style.nav_list_item + " small"}
+              className={style.nav_list_item + " small px-3"}
               to="contact"
               spy={true}
               smooth={true}
@@ -98,7 +68,7 @@ export const LeftPanel = () => {
         </nav>
 
         <div className={style.sm_icon_group}>
-          <div className={style.icon_container}>
+          <div className={style.icon_container + " py-3"}>
             <a
               href="https://www.facebook.com/Lan.Arch22/"
               target="_blank"
@@ -107,7 +77,7 @@ export const LeftPanel = () => {
               <FaFacebookF fontSize={16} />
             </a>
           </div>
-          <div className={style.icon_container}>
+          <div className={style.icon_container + " py-3"}>
             <a
               href="https://www.instagram.com/thelancethe/"
               target="_blank"
@@ -116,7 +86,7 @@ export const LeftPanel = () => {
               <FaInstagram fontSize={16} />
             </a>
           </div>
-          <div className={style.icon_container}>
+          <div className={style.icon_container + " py-3"}>
             <a
               href="https://twitter.com/thelancethe"
               target="_blank"
@@ -125,7 +95,7 @@ export const LeftPanel = () => {
               <FaTwitter fontSize={16} />
             </a>
           </div>
-          <div className={style.icon_container}>
+          <div className={style.icon_container + " py-3"}>
             <a
               href="https://github.com/SneakingSlayer"
               target="_blank"
