@@ -73,19 +73,26 @@
 }
 
 .burger > div {
-  height: 5px;
+  height:3px;
   background-color: #fff;
   transition: 0.5s;
   z-index: 1;
   border-radius: 100px;
+  box-shadow: -2px -1px 9px rgba(255, 255, 255, .5);
 }
 
 .burger > div:nth-child(1) {
-  width: 1.7rem;
+  width: 1.5rem;
+  
+}
+
+.burger > div:nth-child(2) {
+  width: 2.2rem;
+  
 }
 
 .burger > div:nth-child(3) {
-  width: 1.4rem;
+  width: 1.2rem;
 }
 
 .burger_input:checked ~ .burger > div {
@@ -100,7 +107,7 @@
   opacity: 0;
 }
 .burger_input:checked ~ .burger > div:nth-child(3) {
-  transform: translateY(-13px) rotate(45deg);
+  transform: translateY(-15px) rotate(45deg);
   width: 2rem;
 }
 
