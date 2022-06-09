@@ -125,157 +125,35 @@ export const Projects = () => {
             />
           </Col>
         </Row>
-        {/**<Row xs={1} md={3} sm={2} className="g-5">
-          <Col>
+        <Row className={style.project_wrapper}>
+          <Col md={6} className={style.feature_img_wrapper}>
+            <img src="/media/images/ig.png" className={style.feature_img} />
+          </Col>
+          <Col md={6} className="d-flex align-items-center mt-4">
             <div>
-              <div className={style.card_img_wrapper}>
-                <div className={style.overlay}></div>
-                <img src="/media/images/gooly.png" className={style.card_img} />
-              </div>
-              <h5 className={style.highlight + " fw-bold"}>
-                Gooly: URL Shortener
-              </h5>
+              <h3 className={style.subtitle}>Instagram Web Clone</h3>
               <p className={style.description}>
-                FREE URL Shortener to shorten and beautify your long and messy
-                links. Created with MongoDB, Express, React, & Node.js
+                Instagram clone built using Next JS, Typescript, and
+                TailwindCSS. This web application was built solely for research
+                purposes and not for any malicious intent.
               </p>
               <ul className={style.list}>
-                <li className={style.list_item + " small"}>React</li>
-                <li className={style.list_item + " small"}>Express</li>
-                <li className={style.list_item + " small"}>MongoDB</li>
+                <li className={style.list_item + " small"}>NextJS</li>
+                <li className={style.list_item + " small"}>Typescript</li>
+                <li className={style.list_item + " small"}>TailwindCSS</li>
               </ul>
-              <button className={style.btn_naked}>
-                Visit site &nbsp;
+              <a
+                href={"https://instagram-web-clone-delta.vercel.app/"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={style.btn_naked}
+              >
+                View project &nbsp;
                 <CgArrowLongRight fontSize={36} />
-              </button>
+              </a>
             </div>
           </Col>
-
-          <Col>
-            <div>
-              <div className={style.card_img_wrapper}>
-                <div className={style.overlay}></div>
-                <img src="/media/images/terra.jpg" className={style.card_img} />
-              </div>
-              <h5 className={style.highlight + " fw-bold"}>
-                Terra: Petition App UI/UX
-              </h5>
-              <p className={style.description}>
-                A petition app that can create environmental change and expose
-                companies that destroy nature. Created with Illustrator and
-                Photoshop.
-              </p>
-              <ul className={style.list}>
-                <li className={style.list_item + " small"}>Photoshop</li>
-                <li className={style.list_item + " small"}>Illustrator</li>
-              </ul>
-              <button className={style.btn_naked}>
-                Visit site &nbsp;
-                <CgArrowLongRight fontSize={36} />
-              </button>
-            </div>
-          </Col>
-
-          <Col>
-            <div>
-              <div className={style.card_img_wrapper}>
-                <div className={style.overlay}></div>
-                <img src="/media/images/terra.jpg" className={style.card_img} />
-              </div>
-              <h5 className={style.highlight + " fw-bold"}>
-                Terra: Petition App UI/UX
-              </h5>
-              <p className={style.description}>
-                A petition app that can create environmental change and expose
-                companies that destroy nature. Created with Illustrator and
-                Photoshop.
-              </p>
-              <ul className={style.list}>
-                <li className={style.list_item + " small"}>Photoshop</li>
-                <li className={style.list_item + " small"}>Illustrator</li>
-              </ul>
-              <button className={style.btn_naked}>
-                Visit site &nbsp;
-                <CgArrowLongRight fontSize={36} />
-              </button>
-            </div>
-          </Col>
-
-          <Col>
-            <div>
-              <div className={style.card_img_wrapper}>
-                <div className={style.overlay}></div>
-                <img src="/media/images/terra.jpg" className={style.card_img} />
-              </div>
-              <h5 className={style.highlight + " fw-bold"}>
-                Terra: Petition App UI/UX
-              </h5>
-              <p className={style.description}>
-                A petition app that can create environmental change and expose
-                companies that destroy nature. Created with Illustrator and
-                Photoshop.
-              </p>
-              <ul className={style.list}>
-                <li className={style.list_item + " small"}>Photoshop</li>
-                <li className={style.list_item + " small"}>Illustrator</li>
-              </ul>
-              <button className={style.btn_naked}>
-                Visit site &nbsp;
-                <CgArrowLongRight fontSize={36} />
-              </button>
-            </div>
-          </Col>
-
-          <Col>
-            <div>
-              <div className={style.card_img_wrapper}>
-                <div className={style.overlay}></div>
-                <img src="/media/images/terra.jpg" className={style.card_img} />
-              </div>
-              <h5 className={style.highlight + " fw-bold"}>
-                Terra: Petition App UI/UX
-              </h5>
-              <p className={style.description}>
-                A petition app that can create environmental change and expose
-                companies that destroy nature. Created with Illustrator and
-                Photoshop.
-              </p>
-              <ul className={style.list}>
-                <li className={style.list_item + " small"}>Photoshop</li>
-                <li className={style.list_item + " small"}>Illustrator</li>
-              </ul>
-              <button className={style.btn_naked}>
-                Visit site &nbsp;
-                <CgArrowLongRight fontSize={36} />
-              </button>
-            </div>
-          </Col>
-
-          <Col>
-            <div>
-              <div className={style.card_img_wrapper}>
-                <div className={style.overlay}></div>
-                <img src="/media/images/terra.jpg" className={style.card_img} />
-              </div>
-              <h5 className={style.highlight + " fw-bold"}>
-                Terra: Petition App UI/UX
-              </h5>
-              <p className={style.description}>
-                A petition app that can create environmental change and expose
-                companies that destroy nature. Created with Illustrator and
-                Photoshop.
-              </p>
-              <ul className={style.list}>
-                <li className={style.list_item + " small"}>Photoshop</li>
-                <li className={style.list_item + " small"}>Illustrator</li>
-              </ul>
-              <button className={style.btn_naked}>
-                Visit site &nbsp;
-                <CgArrowLongRight fontSize={36} />
-              </button>
-            </div>
-          </Col>
-        </Row>*/}
+        </Row>
       </main>
     </div>
   );
