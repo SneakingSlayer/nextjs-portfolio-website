@@ -38,14 +38,19 @@ export const Hero = () => {
                 web experience. I am currently studying in Malayan Colleges,
                 MAPUA as a Computer Science major.
               </p>
-              <div className={style.btn_group}>
+              <div
+                className={
+                  "d-flex flex-sm-row flex-column align-items-start align-items-sm-center " +
+                  style.btn_group
+                }
+              >
                 <Link
                   to="contact"
                   spy={true}
                   smooth={true}
                   delay={10}
                   duration={10}
-                  className={style.btn_primary}
+                  className={"text-center " + style.btn_primary}
                 >
                   Get In Touch
                 </Link>
@@ -55,7 +60,7 @@ export const Hero = () => {
                   smooth={true}
                   delay={10}
                   duration={10}
-                  className={style.btn_line}
+                  className={"my-3 " + style.btn_line}
                 >
                   Learn More &nbsp;
                   <CgArrowLongRight fontSize={36} />
