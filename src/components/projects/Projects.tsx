@@ -12,8 +12,9 @@ export const Projects = () => {
           <span className={style.highlight + " fs-4"}>03.</span> Featured
           Projects
         </h1>
-        {myProjects.map((project) => (
+        {myProjects.map((project, key) => (
           <Project
+            key={key}
             title={project.title}
             description={project.description}
             img={project.img}
