@@ -9,7 +9,7 @@ export const Footer = () => {
           <Col
             lg={5}
             md={5}
-            className="order-3 order-lg-0 order-md-0 d-flex justify-content-center justify-content-lg-start justify-content-md-start"
+            className=" text-center text-sm-start order-3 order-lg-0 order-md-0 d-flex justify-content-center justify-content-lg-start justify-content-md-start"
           >
             <p className={style.footer_text + " small"}>
               © 2022 Larch. All Rights Reserved.
@@ -24,7 +24,7 @@ export const Footer = () => {
           <Col
             lg={5}
             md={5}
-            className="d-flex justify-content-center justify-content-lg-end justify-content-md-end"
+            className="d-flex justify-content-center justify-content-lg-end justify-content-md-end text-center text-sm-start"
           >
             <p className={style.footer_text + " small"}>
               Designed & Developed by Lance Endaya

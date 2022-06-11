@@ -70,7 +70,7 @@ export const About = () => {
               </li>
             </ul>
 
-            <div className="d-flex align-items-center mt-4">
+            <div className="d-flex align-items-center mt-4 flex-wrap">
               <a
                 href="/"
                 target="_blank"
