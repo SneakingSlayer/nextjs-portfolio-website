@@ -61,8 +61,10 @@ export const Project = (props: PostLeftProps) => {
           <h3 className={style.subtitle}>{title}</h3>
           <p className={style.description}>{description}</p>
           <ul className={style.list}>
-            {tags.map((tag) => (
-              <li className={style.list_item + " small"}>{tag}</li>
+            {tags.map((tag, key) => (
+              <li key={key} className={style.list_item + " small"}>
+                {tag}
+              </li>
             ))}
           </ul>
           <a
