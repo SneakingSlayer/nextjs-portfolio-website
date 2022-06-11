@@ -14,7 +14,7 @@ interface PostLeftProps {
 }
 
 export const Project = (props: PostLeftProps) => {
-  const { title, description, img, tags, cta, left } = props;
+  const { title, description, img, tags, cta, left, url } = props;
   return left ? (
     <Row className={style.project_wrapper}>
       <Col
@@ -32,7 +32,7 @@ export const Project = (props: PostLeftProps) => {
             ))}
           </ul>
           <a
-            href="https://goolyapp.herokuapp.com/"
+            href={`${url}`}
             target="_blank"
             rel="noopener noreferrer"
             className={style.btn_naked}
@@ -68,11 +68,7 @@ export const Project = (props: PostLeftProps) => {
             ))}
           </ul>
           <a
-            href={
-              process.env.terraProjectRoute === undefined
-                ? "/"
-                : process.env.terraProjectRoute
-            }
+            href={`${url}`}
             target="_blank"
             rel="noopener noreferrer"
             className={style.btn_naked}
