@@ -63,16 +63,25 @@
 
 .list {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin-bottom: 1.5rem;
 }
 .list_item {
   list-style: none;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.7);
   padding: 0.3rem 1rem;
   border-radius: 8px;
-  margin-right: 0.5rem;
+  text-shadow: 2px 2px 9px rgba(255,255,255,0.4);
+  /***/
+  background: rgba(255, 255, 255, 0.1);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .subtitle {

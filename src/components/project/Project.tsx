@@ -26,7 +26,7 @@ export const Project = (props: PostLeftProps) => {
           <p className={style.description}>{description}</p>
           <ul className={style.list}>
             {tags.map((tag, key) => (
-              <li key={key} className={style.list_item + " small"}>
+              <li key={key} className={style.list_item + " small me-2 my-2"}>
                 {tag}
               </li>
             ))}
@@ -62,7 +62,7 @@ export const Project = (props: PostLeftProps) => {
           <p className={style.description}>{description}</p>
           <ul className={style.list}>
             {tags.map((tag, key) => (
-              <li key={key} className={style.list_item + " small"}>
+              <li key={key} className={style.list_item + " small me-2 my-2"}>
                 {tag}
               </li>
             ))}

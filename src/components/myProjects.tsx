@@ -34,7 +34,7 @@ export const myProjects = [
     description:
       "Instagram clone built using Next JS, Typescript, and TailwindCSS. This web application was built solely for research purposes and not for any malicious intent.",
     img: "/media/images/ig.png",
-    tags: [],
+    tags: ["Next JS", "Tailwind CSS"],
     cta: "View site",
     url: "https://instagram-web-clone-delta.vercel.app/",
     left: false,
