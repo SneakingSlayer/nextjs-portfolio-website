@@ -24,7 +24,7 @@ export const Hero = () => {
       <div className={"content " + style.hero_content}>
         <Row className="py-4 ">
           <Col md={6} className="d-flex align-items-center">
-            <FadeIn delay={50}>
+            <FadeIn delay={100}>
               <p className={style.highlight + " mb-0 fw-bold"}>
                 Hi, I am Lance.
               </p>
@@ -35,8 +35,8 @@ export const Hero = () => {
               </h1>
               <p className={style.description}>
                 I&apos;m a Software Engineer primarily focused on enhancing your
-                web experience. I am currently studying in Malayan Colleges,
-                MAPUA as a Computer Science major.
+                web experience. I am currently working as a JR Developer at
+                Reward Holdings Limited.
               </p>
               <div
                 className={
@@ -75,7 +75,7 @@ export const Hero = () => {
               " d-flex align-items-center justify-content-center"
             }
           >
-            <FadeIn delay={50}>
+            <FadeIn delay={100}>
               <img src="/media/images/hero.png" className={style.hero_img} />
             </FadeIn>
           </Col>

@@ -11,6 +11,7 @@ import { Projects } from "../src/components/projects/Projects";
 import { SplashScreen } from "../src/components/splashscreen/SplashScreen";
 import { Banner } from "../src/components/banner/Banner";
 import { Contact } from "../src/components/contact/Contact";
+import { PageTransition } from "../src/components/pagetransition/PageTransition";
 const Home: NextPage = () => {
   const [count, setCount] = useState(0);
   useEffect(() => {
@@ -53,15 +54,17 @@ const Home: NextPage = () => {
         <meta property="og:url" content="https://lanceendaya.vercel.app/" />
         <meta property="og:type" content="website" />
       </Head>
-      {count < 97 ? (
+      {count < 99 ? (
         <SplashScreen count={count} />
       ) : (
         <Layout>
-          <Hero />
-          <About />
-          <Projects />
-          <Banner />
-          <Contact />
+          <PageTransition>
+            <Hero />
+            <About />
+            <Projects />
+            <Banner />
+            <Contact />
+          </PageTransition>
         </Layout>
       )}
     </>

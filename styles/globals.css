@@ -11,6 +11,7 @@ body {
   font-family: "Poppins", sans-serif !important;
   scroll-behavior: smooth;
   user-select: none;
+  background-color: #000 !important;
 }
 
 #__next {
@@ -61,7 +62,7 @@ a {
 }
 
 .active {
-  text-shadow: 2px 2px 9px rgba(255, 136, 0,.45) !important;
+  text-shadow: 2px 2px 9px rgba(255, 136, 0, 0.45) !important;
   color: #ff8800 !important;
   opacity: 1 !important;
 }

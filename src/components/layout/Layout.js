@@ -4,19 +4,13 @@ import { LeftPanel } from "../leftpanel/LeftPanel";
 import { Appbar } from "../appbar/Appbar";
 import { Footer } from "../footer/Footer";
 import { Pagination } from "../sitepagination/Pagination";
+import { PageTransition } from "../pagetransition/PageTransition";
 export const Layout = ({ children }) => {
   return (
     <Container className="px-0 ps-0 h-100 position-relative" fluid>
       <Appbar />
-      <Pagination />
+
       <Row className="mx-0 ms-0 h-100">
-        {/**<Col
-          lg={1}
-          md={0}
-          className="position-fixed px-0 ps-0 h-100 d-none d-lg-block"
-        >
-          <LeftPanel />
-        </Col> */}
         <Col
           lg={12}
           md={12}
