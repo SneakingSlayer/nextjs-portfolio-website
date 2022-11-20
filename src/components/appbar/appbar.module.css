@@ -1,15 +1,14 @@
 .appbar {
-  padding: 1rem .5rem;
+  padding: 1rem 0.5rem;
   transition: background 0.2s ease;
 }
 
-.appbar_active{
-
-  transition: background 0.2s ease;
-  padding: 1rem .5rem;
-  background: rgba(0, 0, 0, 0.5);
+.appbar_active {
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
+  transition: background 0.2s ease;
+  padding: 1rem 0.5rem;
+  background: rgba(0, 0, 0, 0.5);
   box-shadow: 0 4px 30px rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
@@ -20,7 +19,7 @@
   width: 100%;
   max-width: 70px;
   height: auto;
-  filter: drop-shadow(2px 2px 5px rgb(255, 136, 0,.35));
+  filter: drop-shadow(2px 2px 5px rgb(255, 136, 0, 0.35));
 }
 
 .appbar_btn {
@@ -28,7 +27,7 @@
   display: flex;
   align-items: center;
   font-weight: 600;
-  text-shadow: 2px 2px 9px rgba(255, 136, 0,.45);
+  text-shadow: 2px 2px 9px rgba(255, 136, 0, 0.45);
 }
 
 .appbar_btn:hover {
@@ -40,7 +39,7 @@
 }
 
 .nav_list_item {
-  text-shadow: 2px 2px 9px rgba(255,255,255,0.35);
+  text-shadow: 2px 2px 9px rgba(255, 255, 255, 0.35);
   color: #fff;
   opacity: 0.8;
   text-decoration: none;
@@ -48,7 +47,6 @@
 }
 
 .nav_list_item:hover {
-  
   color: #fff;
   opacity: 0.5;
   text-decoration: none;
@@ -73,22 +71,20 @@
 }
 
 .burger > div {
-  height:3px;
-  background-color: #fff;
-  transition: 0.5s;
+  height: 3px;
+  background-color: #ff8800;
+  transition: 0.2s;
   z-index: 1;
   border-radius: 100px;
-  box-shadow: -2px -1px 9px rgba(255, 255, 255, .5);
+  box-shadow: -2px -1px 9px rgba(255, 136, 0, 0.5);
 }
 
 .burger > div:nth-child(1) {
   width: 1.5rem;
-  
 }
 
 .burger > div:nth-child(2) {
   width: 2.2rem;
-  
 }
 
 .burger > div:nth-child(3) {
@@ -96,7 +92,7 @@
 }
 
 .burger_input:checked ~ .burger > div {
-  background-color: #fff;
+  background-color: #ff8800;
 }
 
 .burger_input:checked ~ .burger > div:nth-child(1) {
@@ -112,7 +108,6 @@
 }
 
 .mobile_nav {
-  background: #000;
   width: 100%;
   height: 100vh;
   position: fixed;
@@ -124,6 +119,10 @@
   transition: 0.5s;
   display: none;
   padding-top: 4rem;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 .burger_input:checked ~ .mobile_nav {
@@ -139,9 +138,9 @@
 .nav_list_item_mobile {
   text-decoration: none;
   color: #fff;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
 
-  border-bottom: 1px solid rgb(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgb(255, 255, 255, 0.05);
 }
 
 .nav_list_item_mobile:hover {
@@ -177,8 +176,7 @@
   color: #ff8800;
 }
 
-@media only screen and (max-width:576px) {
-
+@media only screen and (max-width: 576px) {
   .mobile_nav {
     display: block;
   }

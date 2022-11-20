@@ -28,7 +28,7 @@ export const Appbar = () => {
   return (
     <>
       <Navbar
-        className={navbar ? style.appbar_active : style.appbar}
+        className={navbar && !open ? style.appbar_active : style.appbar}
         variant="dark"
         fixed="top"
       >
@@ -127,8 +127,8 @@ export const Appbar = () => {
                 delay={10}
                 duration={10}
               >
-                <h1 className="mb-0">
-                  <span className="fs-6">01. </span>Home
+                <h1 className="mb-0 fw-bold">
+                  <span className="fs-6 ">01. </span>Home
                 </h1>
               </Link>
               <Link
@@ -140,7 +140,7 @@ export const Appbar = () => {
                 delay={10}
                 duration={10}
               >
-                <h1 className="mb-0">
+                <h1 className="mb-0 fw-bold">
                   <span className="fs-6">02. </span>About
                 </h1>
               </Link>
@@ -153,7 +153,7 @@ export const Appbar = () => {
                 delay={10}
                 duration={10}
               >
-                <h1 className="mb-0">
+                <h1 className="mb-0 fw-bold">
                   <span className="fs-6">03. </span>Projects
                 </h1>
               </Link>
@@ -166,7 +166,7 @@ export const Appbar = () => {
                 delay={10}
                 duration={10}
               >
-                <h1 className="mb-0">
+                <h1 className="mb-0  fw-bold">
                   <span className="fs-6">04. </span>Contact
                 </h1>
               </Link>
@@ -175,7 +175,7 @@ export const Appbar = () => {
               href="#"
               target="_blank"
               rel="noopener noreferrer"
-              className={style.mobile_navigation_btn}
+              className={style.mobile_navigation_btn + " fw-bold"}
             >
               <RiExternalLinkFill className="mx-1 fs-6" fontSize={21} /> Resume
             </a>
