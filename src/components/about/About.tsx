@@ -28,11 +28,13 @@ export const About = () => {
             that are creative, eye-catching, and usable with the aim to ehance
             and ease your browsing experience.
           </p>
+          {/*
           <p className={style.description}>
             I&apos;ve been working as a Freelance Web Developer for about a year
             using a variety of modern technologies. My primary focus is building
             or reanimating boring and complex websites.
           </p>
+          */}
           <p className={style.description}>
             Here are a few technologies I’ve been working with recently:
           </p>

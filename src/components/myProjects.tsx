@@ -7,7 +7,7 @@ export const myProjects = [
     tags: ["React", "Express", "MongoDB"],
     cta: "Visit site",
     url: "https://goolyapp.herokuapp.com/",
-    left: true,
+    left: false,
   },
   {
     title: "Pollster: Polling app",
@@ -17,7 +17,7 @@ export const myProjects = [
     tags: ["React Native", "Express", "MongoDB"],
     cta: "View project",
     url: "https://github.com/SneakingSlayer/react-native-polling-app",
-    left: false,
+    left: true,
   },
   {
     title: "Terra: Petition App",
@@ -27,7 +27,7 @@ export const myProjects = [
     tags: ["Illustrator", "Photoshop"],
     cta: "View Project",
     url: "https://drive.google.com/file/d/1MTdwPjhlTDqNQpPTIh31ITyvvA9G-Bd2/view?usp=sharing",
-    left: true,
+    left: false,
   },
 
   /* {
