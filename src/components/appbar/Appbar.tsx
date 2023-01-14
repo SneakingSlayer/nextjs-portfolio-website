@@ -65,6 +65,16 @@ export const Appbar = () => {
               </Link>
               <Link
                 className={style.nav_list_item + " small px-3"}
+                to="experience"
+                spy={true}
+                smooth={true}
+                delay={10}
+                duration={10}
+              >
+                Work
+              </Link>
+              <Link
+                className={style.nav_list_item + " small px-3"}
                 to="projects"
                 spy={true}
                 smooth={true}
@@ -147,6 +157,19 @@ export const Appbar = () => {
               <Link
                 className={style.nav_list_item_mobile}
                 onClick={() => setOpen(false)}
+                to="experience"
+                spy={true}
+                smooth={true}
+                delay={10}
+                duration={10}
+              >
+                <h1 className="mb-0 fw-bold">
+                  <span className="fs-6">03. </span>Work
+                </h1>
+              </Link>
+              <Link
+                className={style.nav_list_item_mobile}
+                onClick={() => setOpen(false)}
                 to="projects"
                 spy={true}
                 smooth={true}
@@ -154,7 +177,7 @@ export const Appbar = () => {
                 duration={10}
               >
                 <h1 className="mb-0 fw-bold">
-                  <span className="fs-6">03. </span>Projects
+                  <span className="fs-6">04. </span>Projects
                 </h1>
               </Link>
               <Link
@@ -167,7 +190,7 @@ export const Appbar = () => {
                 duration={10}
               >
                 <h1 className="mb-0  fw-bold">
-                  <span className="fs-6">04. </span>Contact
+                  <span className="fs-6">05. </span>Contact
                 </h1>
               </Link>
             </Scrollspy>

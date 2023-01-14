@@ -2,21 +2,9 @@ import React from "react";
 import style from "./hero.module.css";
 import FadeIn from "react-fade-in";
 
-import { CgMouse } from "react-icons/cg";
 import { Link } from "react-scroll";
-import { HiOutlineChevronDoubleDown } from "react-icons/hi";
 import { Row, Col } from "react-bootstrap";
-import { ImHtmlFive } from "react-icons/im";
 import { CgArrowLongRight } from "react-icons/cg";
-
-import {
-  IoLogoJavascript,
-  IoLogoHtml5,
-  IoLogoReact,
-  IoLogoNodejs,
-} from "react-icons/io5";
-
-import { SiTypescript } from "react-icons/si";
 
 export const Hero = () => {
   return (

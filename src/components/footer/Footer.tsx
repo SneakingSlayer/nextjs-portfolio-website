@@ -1,6 +1,7 @@
 import React from "react";
 import style from "./footer.module.css";
 import { Row, Col } from "react-bootstrap";
+import moment from "moment";
 export const Footer = () => {
   return (
     <footer className={style.footer}>
@@ -12,7 +13,7 @@ export const Footer = () => {
             className=" text-center text-sm-start order-3 order-lg-0 order-md-0 d-flex justify-content-center justify-content-lg-start justify-content-md-start"
           >
             <p className={style.footer_text + " small"}>
-              © 2022 Larch. All Rights Reserved.
+              © {moment().year()} Larch. All Rights Reserved.
             </p>
           </Col>
           <Col lg={2} md={2} className="d-flex justify-content-center">

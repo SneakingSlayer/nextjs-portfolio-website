@@ -10,16 +10,6 @@ export const myProjects = [
     left: true,
   },
   {
-    title: "Terra: Petition App",
-    description:
-      "Project T.E.R.R.A. is a proposed social media application focused on the environment that acts as an aid in addressing climate change issues.",
-    img: "/media/images/terra.jpg",
-    tags: ["Illustrator", "Photoshop"],
-    cta: "View Project",
-    url: "https://drive.google.com/file/d/1MTdwPjhlTDqNQpPTIh31ITyvvA9G-Bd2/view?usp=sharing",
-    left: false,
-  },
-  {
     title: "Pollster: Polling app",
     description:
       "Pollster is a mobile polling application for organizations to create polls, gather the trends and opinions of their constituents for research purposes. This application is still under development using React Native, Express, MongoDB, and Cloudinary.",
@@ -27,9 +17,20 @@ export const myProjects = [
     tags: ["React Native", "Express", "MongoDB"],
     cta: "View project",
     url: "https://github.com/SneakingSlayer/react-native-polling-app",
-    left: true,
+    left: false,
   },
   {
+    title: "Terra: Petition App",
+    description:
+      "Project T.E.R.R.A. is a proposed social media application focused on the environment that acts as an aid in addressing climate change issues.",
+    img: "/media/images/terra.jpg",
+    tags: ["Illustrator", "Photoshop"],
+    cta: "View Project",
+    url: "https://drive.google.com/file/d/1MTdwPjhlTDqNQpPTIh31ITyvvA9G-Bd2/view?usp=sharing",
+    left: true,
+  },
+
+  /* {
     title: "Instagram Web Clone",
     description:
       "Instagram clone built using Next JS, Typescript, and TailwindCSS. This web application was built solely for research purposes and not for any malicious intent.",
@@ -38,5 +39,5 @@ export const myProjects = [
     cta: "View site",
     url: "https://instagram-web-clone-delta.vercel.app/",
     left: false,
-  },
+  },*/
 ];
