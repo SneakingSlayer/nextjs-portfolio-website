@@ -5,44 +5,9 @@ import { Row, Col, Form } from "react-bootstrap";
 import { FaHome, FaPhone, FaEnvelopeOpen } from "react-icons/fa";
 import { GoCheck } from "react-icons/go";
 import { IoWarning } from "react-icons/io5";
+import useContact from "./useContact";
 export const Contact = () => {
-  const [name, setName] = useState<string>("");
-  const [email, setEmail] = useState<string>("");
-  const [message, setMessage] = useState<string>("");
-  const [loading, setLoading] = useState<boolean>(false);
-  const [status, setStatus] = useState<boolean | null>(null);
-  const sendEmail = (e: any) => {
-    e.preventDefault();
-    setLoading(true);
-    setStatus(null);
-    emailjs
-      .send(
-        process.env.yourServiceID === undefined
-          ? ""
-          : process.env.yourServiceID,
-        process.env.yourTemplateID === undefined
-          ? ""
-          : process.env.yourTemplateID,
-        {
-          from_name: name,
-          to_name: "Lance",
-          from_email: email,
-          message: message,
-        },
-        process.env.userID === undefined ? "" : process.env.userID
-      )
-      .then((res) => {
-        setName("");
-        setEmail("");
-        setMessage("");
-        setLoading(false);
-        setStatus(true);
-      })
-      .catch((err) => {
-        setLoading(false);
-        setStatus(false);
-      });
-  };
+  const { contactValues, handleChange, handleSubmit } = useContact();
 
   return (
     <div className={style.contact} id="contact">
@@ -53,7 +18,6 @@ export const Contact = () => {
         <h1 className={style.title}>
           <span className={style.highlight + " fs-4"}>04.</span> Contact
         </h1>
-
         <Row>
           <Col md={6} className={style.contact_left}>
             <div>
@@ -87,7 +51,7 @@ export const Contact = () => {
           </Col>
 
           <Col md={6}>
-            <Form onSubmit={sendEmail}>
+            <Form onSubmit={handleSubmit}>
               <Form.Group className="mb-3" controlId="formBasic">
                 <Form.Label className={style.contact_label}>
                   Full name
@@ -95,9 +59,10 @@ export const Contact = () => {
                 <Form.Control
                   className={style.contact_input}
                   type="text"
+                  name="name"
                   placeholder="Enter full name"
-                  onChange={(e) => setName(e.target.value)}
-                  value={name}
+                  onChange={handleChange}
+                  value={contactValues.name}
                   required
                 />
               </Form.Group>
@@ -106,11 +71,12 @@ export const Contact = () => {
                   Email address
                 </Form.Label>
                 <Form.Control
+                  name="email"
                   className={style.contact_input}
                   type="email"
                   placeholder="Enter email"
-                  onChange={(e) => setEmail(e.target.value)}
-                  value={email}
+                  onChange={handleChange}
+                  value={contactValues.email}
                   required
                 />
               </Form.Group>
@@ -120,22 +86,25 @@ export const Contact = () => {
               >
                 <Form.Label className={style.contact_label}>Message</Form.Label>
                 <Form.Control
+                  name="message"
                   as="textarea"
                   className={style.contact_input}
                   placeholder="Enter message"
-                  onChange={(e) => setMessage(e.target.value)}
-                  value={message}
+                  onChange={handleChange}
+                  value={contactValues.message}
                   rows={6}
                   required
                 />
               </Form.Group>
               <button
                 className={style.contact_btn}
-                disabled={loading ? true : false}
+                disabled={
+                  contactValues.loading || contactValues.status ? true : false
+                }
               >
-                {status === null ? (
+                {contactValues.status === null ? (
                   "Submit"
-                ) : status === true ? (
+                ) : contactValues.status === true ? (
                   <div className="d-flex align-items-center justify-content-center">
                     <GoCheck fontSize={21} /> Email Sent Successfully!
                   </div>

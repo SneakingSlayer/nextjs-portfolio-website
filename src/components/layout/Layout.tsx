@@ -1,15 +1,12 @@
 import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
-import { LeftPanel } from "../leftpanel/LeftPanel";
 import { Appbar } from "../appbar/Appbar";
 import { Footer } from "../footer/Footer";
-import { Pagination } from "../sitepagination/Pagination";
-import { PageTransition } from "../pagetransition/PageTransition";
-export const Layout = ({ children }) => {
+
+export const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <Container className="px-0 ps-0 h-100 position-relative" fluid>
       <Appbar />
-
       <Row className="mx-0 ms-0 h-100">
         <Col
           lg={12}

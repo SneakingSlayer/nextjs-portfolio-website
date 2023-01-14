@@ -74,3 +74,16 @@ a {
   justify-content: space-between;
   padding: 0;
 }
+
+.text-highlight {
+  color: #ff8800;
+}
+
+.text-muted-le {
+  color: #fff;
+  opacity: 0.8;
+}
+
+.bg-highlight {
+  background-color: #ff8800;
+}
