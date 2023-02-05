@@ -12,7 +12,6 @@ export const Appbar = () => {
   const [open, setOpen] = useState<boolean>(false);
   const [navbar, setNavbar] = useState(false);
   const changeBackground = () => {
-    console.log(window.scrollY);
     if (window.scrollY >= 66) {
       setNavbar(true);
     } else {
@@ -24,7 +23,6 @@ export const Appbar = () => {
     window.addEventListener("scroll", changeBackground);
   }, [window.scrollY]);
 
-  console.log(navbar);
   return (
     <>
       <Navbar

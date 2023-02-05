@@ -1,0 +1,25 @@
+.pill {
+  list-style: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+  padding: 0.2rem 0.8rem;
+  border-radius: 8px;
+  text-shadow: 2px 2px 9px rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.1);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  box-shadow: 0 4px 30px rgba(255, 247, 247, 0.05);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.pill span {
+  font-size: 12px;
+}
+
+.pill_group {
+  padding: 1rem 0;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
