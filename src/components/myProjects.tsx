@@ -41,3 +41,36 @@ export const myProjects = [
     left: false,
   },*/
 ];
+
+export const works = [
+  {
+    company: "Reward Holdings Limited",
+    title: "Frontend Developer",
+    img: "/media/images/rhlogo.webp",
+    duration: {
+      start: 1659283200000,
+      end: -1,
+    },
+    stack: ["React JS", "Node JS", "Wordpress", "Bootstrap", "MySQL"],
+    responsiblities: [
+      "Builds and maintains React apps and Wordpress custom themes.",
+      "Server-side scripting using Node JS for third-party automations.",
+      "Figure out legacy codebase and re-engineer to modern tech such as React.",
+    ],
+  },
+  {
+    company: "Freelance",
+    title: "Frontend Developer | UI UX",
+    img: null,
+    duration: {
+      start: 1627747200000,
+      end: 1651334400000,
+    },
+    stack: ["React JS", "Adobe XD", "Illustrator", "Photoshop"],
+    responsiblities: [
+      "Frontend development using mainly React JS",
+      "Web UI/UX Designing",
+      "Logo Designing",
+    ],
+  },
+];
