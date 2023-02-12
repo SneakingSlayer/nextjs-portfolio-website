@@ -6,7 +6,7 @@ export const myProjects = [
     img: "/media/images/gooly.PNG",
     tags: ["React", "Express", "MongoDB"],
     cta: "Visit site",
-    url: "https://goolyapp.herokuapp.com/",
+    url: "https://gooly.onrender.com/",
     left: false,
   },
   {
