@@ -1,12 +1,22 @@
 export const myProjects = [
   {
+    title: "Thrdr: Thread app",
+    description:
+      "A platform where you can share your thoughts in bite-sized messages with people from around the world! Your Digital Oasis of Discussions: Where Ideas Flourish, Friendships Bloom, and Where Genuine Connections are Cultivated.",
+    img: "/media/images/thrdr.webp",
+    tags: ["Next", "Prisma", "Supabase", "Chakra UI"],
+    cta: "Visit site",
+    url: "https://thrdr.vercel.app/",
+    left: true,
+  },
+  {
     title: "Gooly: URL Shortener",
     description:
       "Gooly is a uniform resource locator (URL) shortener is a tool or service that shortens the length of a URL. It primarily aims to shorten web page URLs to make them easier to memorize and track. The application can shorten long and cluttered URLs to a minimum of 7 long characters (not including the protocol, domain, and sub paths).",
     img: "/media/images/gooly.PNG",
     tags: ["React", "Express", "MongoDB"],
     cta: "Visit site",
-    url: "https://gooly.onrender.com/",
+    url: "https://gooly.vercel.app/",
     left: false,
   },
   {
@@ -19,7 +29,7 @@ export const myProjects = [
     url: "https://github.com/SneakingSlayer/react-native-polling-app",
     left: true,
   },
-  {
+  /*  {
     title: "Terra: Petition App",
     description:
       "Project T.E.R.R.A. is a proposed social media application focused on the environment that acts as an aid in addressing climate change issues.",
@@ -28,7 +38,7 @@ export const myProjects = [
     cta: "View Project",
     url: "https://drive.google.com/file/d/1MTdwPjhlTDqNQpPTIh31ITyvvA9G-Bd2/view?usp=sharing",
     left: false,
-  },
+  }, */
 
   /* {
     title: "Instagram Web Clone",
@@ -51,9 +61,9 @@ export const works = [
       start: 1659283200000,
       end: -1,
     },
-    stack: ["React JS", "Node JS", "Wordpress", "Bootstrap", "MySQL"],
+    stack: ["React JS", "Node JS", "React Native", "Wordpress", "MySQL"],
     responsiblities: [
-      "Builds and maintains React apps and Wordpress custom themes.",
+      "Builds and maintains React, React Native, Wordpress custom themes, & Zendesk custom themes.",
       "Server-side scripting using Node JS for third-party automations.",
       "Figure out legacy codebase and re-engineer to modern tech such as React.",
     ],
