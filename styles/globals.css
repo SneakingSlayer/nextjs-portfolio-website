@@ -31,7 +31,7 @@ a {
   width: 100%;
   height: auto;
   max-width: 1280px;
-  padding: 5rem 1rem;
+  padding: 3rem 1rem;
   z-index: 1;
 }
 
@@ -86,4 +86,16 @@ a {
 
 .bg-highlight {
   background-color: #ff8800;
+}
+
+@media screen and (min-width: 768px) {
+  .content {
+    padding: 3rem 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .content {
+    padding: 5rem 1rem;
+  }
 }

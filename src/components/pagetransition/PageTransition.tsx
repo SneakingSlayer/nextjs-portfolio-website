@@ -13,7 +13,7 @@ export const PageTransition = ({ children, classes }: ptPropTypes) => {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 1 }}
-        className={`${classes}`}
+        className={`${classes ?? ""}`}
       >
         {children}
       </motion.div>
