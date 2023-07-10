@@ -7,7 +7,7 @@ import { AccordionItem } from "../accordion/AccordionItem";
 import { AccordionBody } from "../accordion/AccordionBody";
 import { ExperienceItem } from "./ExperienceItem";
 import { Work } from "./types";
-import { works } from "../myProjects";
+import { works } from "../../../fixtures/index.";
 export const Experience = () => {
   const [active, setActive] = React.useState<number>(0);
 

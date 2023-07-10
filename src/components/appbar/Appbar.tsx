@@ -1,27 +1,27 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { useRouter } from "next/router";
 import style from "./appbar.module.css";
 import { RiExternalLinkFill } from "react-icons/ri";
 import { FaPaperPlane } from "react-icons/fa";
-import Scrollspy from "react-scrollspy";
+import Scrollspy from "react-ui-scrollspy";
 import { Link } from "react-scroll";
 import { FaFacebookF, FaInstagram, FaTwitter, FaGithub } from "react-icons/fa";
 import { routes } from "../../utils/routes";
 export const Appbar = () => {
   const [open, setOpen] = useState<boolean>(false);
   const [navbar, setNavbar] = useState(false);
-  const changeBackground = () => {
+  const changeBackground = useCallback(() => {
     if (window.scrollY >= 66) {
       setNavbar(true);
     } else {
       setNavbar(false);
     }
-  };
+  }, []);
   useEffect(() => {
     changeBackground();
     window.addEventListener("scroll", changeBackground);
-  }, [window.scrollY]);
+  }, [changeBackground]);
 
   return (
     <>
@@ -37,9 +37,10 @@ export const Appbar = () => {
 
           <Nav className="mr-auto 	d-none d-sm-block">
             <Scrollspy
-              className={"scrollspy px-4"}
-              items={routes}
-              currentClassName="active"
+            // activeClass="active"
+            // className={"scrollspy px-4"}
+            // items={routes}
+            // currentClassName="active"
             >
               <Link
                 className={style.nav_list_item + " small px-3"}
@@ -88,6 +89,7 @@ export const Appbar = () => {
                 smooth={true}
                 delay={10}
                 duration={10}
+                offset={-50}
               >
                 Contact
               </Link>
@@ -122,75 +124,77 @@ export const Appbar = () => {
 
           <nav className={style.mobile_nav}>
             <Scrollspy
-              className={"scrollspy " + style.nav_list_mobile}
-              items={routes}
-              currentClassName="active"
+            //  className={"scrollspy " + style.nav_list_mobile}
+            // items={routes}
+            // currentClassName="active"
             >
-              <Link
-                className={style.nav_list_item_mobile}
-                onClick={() => setOpen(false)}
-                to="home"
-                spy={true}
-                smooth={true}
-                delay={10}
-                duration={10}
-              >
-                <h1 className="mb-0 fw-bold">
-                  <span className="fs-6 ">01. </span>Home
-                </h1>
-              </Link>
-              <Link
-                className={style.nav_list_item_mobile}
-                onClick={() => setOpen(false)}
-                to="about"
-                spy={true}
-                smooth={true}
-                delay={10}
-                duration={10}
-              >
-                <h1 className="mb-0 fw-bold">
-                  <span className="fs-6">02. </span>About
-                </h1>
-              </Link>
-              <Link
-                className={style.nav_list_item_mobile}
-                onClick={() => setOpen(false)}
-                to="experience"
-                spy={true}
-                smooth={true}
-                delay={10}
-                duration={10}
-              >
-                <h1 className="mb-0 fw-bold">
-                  <span className="fs-6">03. </span>Work
-                </h1>
-              </Link>
-              <Link
-                className={style.nav_list_item_mobile}
-                onClick={() => setOpen(false)}
-                to="projects"
-                spy={true}
-                smooth={true}
-                delay={10}
-                duration={10}
-              >
-                <h1 className="mb-0 fw-bold">
-                  <span className="fs-6">04. </span>Projects
-                </h1>
-              </Link>
-              <Link
-                className={style.nav_list_item_mobile}
-                onClick={() => setOpen(false)}
-                to="contact"
-                spy={true}
-                smooth={true}
-                delay={10}
-                duration={10}
-              >
-                <h1 className="mb-0  fw-bold">
-                  <span className="fs-6">05. </span>Contact
-                </h1>
-              </Link>
+              <div className={"scrollspy " + style.nav_list_mobile}>
+                <Link
+                  className={style.nav_list_item_mobile}
+                  onClick={() => setOpen(false)}
+                  to="home"
+                  spy={true}
+                  smooth={true}
+                  delay={10}
+                  duration={10}
+                >
+                  <h1 className="mb-0 fw-bold">
+                    <span className="fs-6 ">01. </span>Home
+                  </h1>
+                </Link>
+                <Link
+                  className={style.nav_list_item_mobile}
+                  onClick={() => setOpen(false)}
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  delay={10}
+                  duration={10}
+                >
+                  <h1 className="mb-0 fw-bold">
+                    <span className="fs-6">02. </span>About
+                  </h1>
+                </Link>
+                <Link
+                  className={style.nav_list_item_mobile}
+                  onClick={() => setOpen(false)}
+                  to="experience"
+                  spy={true}
+                  smooth={true}
+                  delay={10}
+                  duration={10}
+                >
+                  <h1 className="mb-0 fw-bold">
+                    <span className="fs-6">03. </span>Work
+                  </h1>
+                </Link>
+                <Link
+                  className={style.nav_list_item_mobile}
+                  onClick={() => setOpen(false)}
+                  to="projects"
+                  spy={true}
+                  smooth={true}
+                  delay={10}
+                  duration={10}
+                >
+                  <h1 className="mb-0 fw-bold">
+                    <span className="fs-6">04. </span>Projects
+                  </h1>
+                </Link>
+                <Link
+                  className={style.nav_list_item_mobile}
+                  onClick={() => setOpen(false)}
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  delay={10}
+                  duration={10}
+                >
+                  <h1 className="mb-0  fw-bold">
+                    <span className="fs-6">05. </span>Contact
+                  </h1>
+                </Link>
+              </div>
             </Scrollspy>
             <a
               href="#"
